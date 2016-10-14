@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Orange Dark Terror mods by maestun</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Orange Dark Terror mods</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/maestun/darkterrormods">View the Project on GitHub <small>maestun/darkterrormods</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/maestun/darkterrormods/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/maestun/darkterrormods/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/maestun/darkterrormods">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="orange-dark-terror-mods" class="anchor" href="#orange-dark-terror-mods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Orange Dark Terror mods</h1>
+
+<p>This file lists some possible mods to make on an Orange Dark Terror amplifier.</p>
+
+<p>You should print the amp's schematic file for easier reference. I won't provide it since I don't know if it's copyrighted material, you should search for it yourself.</p>
+
+<h1>
+<a id="warning--disclaimer" class="anchor" href="#warning--disclaimer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WARNING / DISCLAIMER</h1>
+
+<p>These mods will totally void your amp's warranty and are given for reference only. There's also high voltages involved, that can kill yourself, burn your house and rape your cat.</p>
+
+<p>I'm not responsible for anything that happens to you, to whatever belongs to you, or to anybody.</p>
+
+<p>Therefor, these mods are strongly discouraged and you should stop reading this immediately :)</p>
+
+<h2>
+<a id="preamp-conversion-to-or15--rockerverb" class="anchor" href="#preamp-conversion-to-or15--rockerverb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preamp conversion to OR15 / Rockerverb</h2>
+
+<p>The only difference with the Dark Terror's preamp is the 3-band EQ (instead of the Shape control).</p>
+
+<h3>
+<a id="required-parts" class="anchor" href="#required-parts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Required parts</h3>
+
+<ul>
+<li>1x A500k pot (bass)</li>
+<li>1x B25k pot (mids)</li>
+<li>1x B250k pot (treble)</li>
+<li>1x 47k resistor</li>
+</ul>
+
+<h3>
+<a id="optional-parts" class="anchor" href="#optional-parts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optional parts</h3>
+
+<p>Those parts will be reused once desoldered from the PCB, but you can buy new ones if you want.</p>
+
+<ul>
+<li>2x 22nF 400V film capacitor</li>
+<li>2x 470pF 1kV film capacitor</li>
+</ul>
+
+<h3>
+<a id="howto" class="anchor" href="#howto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Howto</h3>
+
+<p>Check that all caps are discharged, and remove the PCB from the amp.</p>
+
+<p>Drill 2 new holes on the front panel for 2 more pots (around the Shape control hole).</p>
+
+<p>Desolder the following components: </p>
+
+<ul>
+<li>VR1 (Shape pot)</li>
+<li>C11, C12, C13, C14 (100pF, 100pF, 22nF, 22nF capacitors)</li>
+<li>R17, R18, R56 (56k, 15k, 4k7 resistors)</li>
+</ul>
+
+<p>Build the new tone stack using the provided schematic (on a vero board, turret, whatever you like). You can reuse the 470pF caps you've desoldered: set them in parallel to replace the two 100pF in series (this will form a ~235pF cap that sounds fine).</p>
+
+<ul>
+<li>Connect the Tone Stack input to R15 / V2 pin 6.</li>
+<li>Connect the Tone Stack output to pin 3 of VR3 (Volume knob).</li>
+</ul>
+
+<p>Enjoy your new EQ :)</p>
+
+<h2>
+<a id="natural-channel-inspired-by-orange-rocker-30" class="anchor" href="#natural-channel-inspired-by-orange-rocker-30" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Natural channel (inspired by Orange Rocker 30)</h2>
+
+<p>In summary, we will use the first triode for preamplification, bypass the 3 following gain stages and the EQ, and connect back to the FX loop. A relay will be used for channel switching.</p>
+
+<h3>
+<a id="required-parts-1" class="anchor" href="#required-parts-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Required parts</h3>
+
+<ul>
+<li>1x DPDT 5v relay</li>
+<li>1x 1N4001 diode</li>
+<li>1x stereo ISOLATED 6.5 jack</li>
+<li>1x SPST toggle switch</li>
+<li>1x bridge rectifier</li>
+<li>1x 16v 470uF capacitor</li>
+<li>1x 47R resistor</li>
+<li>1x 33R resistor</li>
+<li>1x 22uF 63V electrolytic capacitor</li>
+<li>1x 22nF 400v film capacitor</li>
+<li>1x 100pF 1kV film capacitor</li>
+<li>1x A1M pot</li>
+</ul>
+
+<h3>
+<a id="howto-1" class="anchor" href="#howto-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Howto</h3>
+
+<p>Remove PCB from the amp, drill 2 holes on the front panel: one for the Natural volume pot, one for the Channel switch.
+Drill another hole on the back of the amp for the footswitch jack.</p>
+
+<ul>
+<li>Lift one terminal of the C2 capacitor (the one connected to V1 pin1 / R3)</li>
+<li>Lift one terminal of the R20 resistor (the one connected to ground)</li>
+<li>Replace C1 with the 22uF capacitor (beware of polarity !)</li>
+<li>Build the Natural volume control and the relay power supply,  using the provided schematic</li>
+<li>Wire everything up: switch, footswitch jack, relay, pots... lots of stuff to do, good luck !</li>
+</ul>
+
+<h2>
+<a id="footswitch" class="anchor" href="#footswitch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Footswitch</h2>
+
+<p>This builds the footswitch that toggles between the channels.</p>
+
+<h3>
+<a id="required-parts-2" class="anchor" href="#required-parts-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Required parts</h3>
+
+<ul>
+<li>1x SPST latch footswitch</li>
+<li>1x stereo ISOLATED 6.5 jack</li>
+<li>1x 2.2K resistor</li>
+<li>1x LED</li>
+<li>1x enclosure</li>
+</ul>
+
+<h3>
+<a id="howto-2" class="anchor" href="#howto-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Howto</h3>
+
+<p>Build everything by following the provided schematic.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/maestun">maestun</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
