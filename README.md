@@ -33,7 +33,7 @@ Drill 2 new holes on the front panel for 2 more pots (around the Shape control h
 
 Desolder the following components: 
 * VR1 (Shape pot)
-* C11 & C12 (100pF capacitors)
+* C11, C12, C13, C14 (100pF, 100pF, 22nF, 22nF capacitors)
 * R17, R18, R56 (56k, 15k, 4k7 resistors)
 
 Build the new tone stack using the provided schematic (on a vero board, turret, whatever you like). You can reuse the 470pF caps you've desoldered: set them in parallel to replace the two 100pF in series (this will form a ~235pF cap that sounds fine).
