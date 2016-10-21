@@ -53,6 +53,7 @@ In summary, we will use the first triode for preamplification, bypass the 3 foll
 * 1x SPST toggle switch
 * 1x bridge rectifier
 * 1x 16v 470uF capacitor
+* 1x 100K resistor
 * 1x 47R resistor
 * 1x 33R resistor
 * 1x 22uF 63V electrolytic capacitor
