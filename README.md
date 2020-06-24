@@ -44,22 +44,25 @@ Build the new tone stack using the provided schematic (on a vero board, turret, 
 Enjoy your new EQ :)
 
 ## Natural channel (inspired by Orange Rocker 30)
-In summary, we will use the first triode for preamplification, bypass the 3 following gain stages and the EQ, and connect back to the FX loop. A relay will be used for channel switching.
+
+* Natural channel uses only the first gain stage for preamplification, then bypasses the 3 following gain stages and the EQ, and then connects back to the FX loop.
+* A relay is used for channel switching. The heater wires are connected to a DC converter in order to power the relay when needed.
+
 
 ### Required parts
-* 1x DPDT 5v relay
+* 1x DPDT 6v relay
 * 1x 1N4001 diode
 * 1x stereo ISOLATED 6.5 jack
 * 1x SPST toggle switch
 * 1x bridge rectifier
-* 1x 16v 470uF capacitor
-* 1x 100K resistor
+* 1x 16v 470uF capacitor (DC filter cap)
 * 1x 47R resistor
-* 1x 33R resistor
-* 1x 22uF 63V electrolytic capacitor
-* 1x 22nF 400v film capacitor
-* 1x 100pF 1kV film capacitor
-* 1x A1M pot
+* 1x 22uF 63v electolytics capacitor
+* 1x 2M2 resistor (anti-pop)
+* 1x 33R resistor (value may vary according to the relay specs)
+* 1x 22nF 400v film capacitor (natural channel decoupling cap)
+* 1x 100pF 1kV film capacitor (bright cap)
+* 1x A1M pot (natural channel volume pot)
 
 ### Howto
 
@@ -68,7 +71,8 @@ Drill another hole on the back of the amp for the footswitch jack.
 
 * Lift one terminal of the C2 capacitor (the one connected to V1 pin1 / R3)
 * Lift one terminal of the R20 resistor (the one connected to ground)
-* Replace C1 with the 22uF capacitor (beware of polarity !)
+* Lift one terminal of the R19 resistor (the one connected dark channel's volume pot center)
+* Replace C1 with the 22uF capacitor (beware of polarity !), this will add more oomph
 * Build the Natural volume control and the relay power supply,  using the provided schematic
 * Wire everything up: switch, footswitch jack, relay, pots... lots of stuff to do, good luck !
 
